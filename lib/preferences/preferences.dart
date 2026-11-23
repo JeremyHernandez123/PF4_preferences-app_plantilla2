@@ -21,13 +21,13 @@ class Preferences {
     _prefs.setString('nom', value);
   }
 
-  static bool get isDarkMode{
-    return _prefs.getBool('darkMode') ?? _isDarkMode;
+  static bool get idDarkMode{
+    return _prefs.getBool('darkmode') ?? _isDarkMode;
   }
 
   static set isDarkMode(bool value){
     _isDarkMode = value;
-    _prefs.setBool('darkMode', value);
+    _prefs.setBool('darkmode', value);
   }
 
   static int get genere{
