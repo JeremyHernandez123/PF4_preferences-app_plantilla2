@@ -35,11 +35,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
                         TextStyle(fontSize: 45, fontWeight: FontWeight.w300)),
                 const Divider(),
                 SwitchListTile(
-                    value: Preferences.idDarkMode,
+                    value: Preferences.isDarkMode,
                     title: const Text('Dark Mode'),
                     onChanged: (value) {
                       Preferences.isDarkMode = value;
-                      setState(() {});
+                      setState(() {
+                        
+                      });
                     }),
                 const Divider(),
                 RadioGroup(
